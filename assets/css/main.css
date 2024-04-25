@@ -32,7 +32,7 @@
 
 .site-navbar .menu-block-wrapper {
   flex-grow: 1;
-  align-items: center;
+  align-items: flex-start;
 }
 
 
@@ -106,7 +106,7 @@
 
 @media (min-width: 992px) {
   .site-header--menu-center .menu-block {
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
 }
@@ -845,9 +845,10 @@
     padding-bottom: 20px;
   } */
   .site-header--menu-center .menu-block-wrapper {
-    position: absolute !important;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static !important; /* Change the position to static, removing absolute positioning */
+    left: auto; /* Reset left property */
+    transform: none; /* Reset transform property */
+    /* You may add other properties as needed */
   }
 }
 
@@ -1011,3 +1012,14 @@ a.log-in-btn:hover:after {
   background-color: #fff;
 }
 
+
+
+
+.pl-20 {padding-left: 20px;}
+
+
+@media only screen and (max-width: 991px) {
+  .mobile-remove {
+      display: none;
+  }
+}

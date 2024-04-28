@@ -1017,6 +1017,8 @@ a.log-in-btn:hover:after {
 
 .pl-20 {padding-left: 20px;}
 
+.mt-10 {margin-top: 100px;}
+
 
 @media only screen and (max-width: 991px) {
   .mobile-remove {

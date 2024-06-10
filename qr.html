@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Redirect</title>
+    <script type="text/javascript">
+        function detectOS() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+
+            // iOS detection
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+
+            return "unknown";
+        }
+
+        function redirectToAppStore() {
+            var os = detectOS();
+            if (os === "Android") {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.fibodo.host";
+            } else if (os === "iOS") {
+                window.location.href = "https://apps.apple.com/us/app/fibodo-for-business/id1094692885";
+            } else {
+                alert("Your operating system is not supported.");
+            }
+        }
+    </script>
+</head>
+<body onload="redirectToAppStore()">
+    <h1>Redirecting to the appropriate app store...</h1>
+</body>
+</html>

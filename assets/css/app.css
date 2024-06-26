@@ -3766,6 +3766,7 @@ span.zubuz-title-shape {
   transition: all 0.4s;
   background-color: var(--white-bg);
   border: 1px solid var(--light-color);
+  min-height: 600px !important;
 }
 .zubuz-iconbox-wrap.center {
   text-align: center;

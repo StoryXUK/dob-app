@@ -175,27 +175,28 @@
         <div class="col-lg-6">
           <div class="zubuz-form-wrap">
             <h3>Fill the from below</h3>
-            <form action="#">
+            <form action="send_email.php" method="post">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="zubuz-main-form">
-                    <input type="text" placeholder="Your Name*">
+                    <input type="text" name="name" placeholder="Your Name*" required>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="zubuz-main-form">
-                    <input type="email" placeholder="Email Address*">
+                    <input type="email" name="email" placeholder="Email Address*" required>
                   </div>
                 </div>
               </div>
               <div class="zubuz-main-form">
-                <input type="text" placeholder="Subject">
+                <input type="text" name="subject" placeholder="Subject">
               </div>
               <div class="zubuz-main-form">
-                <textarea name="textarea" placeholder="Write us your comment"></textarea>
+                <textarea name="message" placeholder="Write us your comment" required></textarea>
               </div>
-              <button id="zubuz-submit-btn" type="button"><span>Send Message</span></button>
+              <button id="zubuz-submit-btn" type="submit"><span>Send Message</span></button>
             </form>
+            
           </div>
         </div>
       </div>

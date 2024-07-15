@@ -4332,7 +4332,7 @@ span.zubuz-title-shape {
 
 .zubuz-brand-logo-wrap {
   padding-bottom: 130px;
-  border-bottom: 1px solid var(--light-color);
+  /* border-bottom: 1px solid var(--light-color); */
 }
 .zubuz-brand-logo-wrap p {
   margin-bottom: 50px;

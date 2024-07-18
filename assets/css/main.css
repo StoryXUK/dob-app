@@ -1047,11 +1047,11 @@ a.log-in-btn:hover:after {
 
 .tab-link {
   background-color: #f1f1f1;
-  border: none;
   padding: 14px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 16px;
+  min-width: 200px;
 }
 
 .tab-link:hover {

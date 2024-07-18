@@ -1026,3 +1026,36 @@ a.log-in-btn:hover:after {
 .link_black {color: #000 !important;}
 
 .mb-4 {margin-bottom:2.2rem!important}
+
+
+
+.tab-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.tab-link:hover {
+  background-color: #ddd;
+}
+
+.tab-link.active {
+  background-color: #ccc;
+}
+

@@ -361,6 +361,18 @@
   font-style: normal;
   letter-spacing: normal;
   position: relative;
+  min-width: 65px;
+}
+
+.site-menu-main .nav-link-item-lg {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  position: relative;
+  min-width: 85px;
+  padding-right: 15px;
 }
 .white-menu .site-menu-main .nav-link-item, 
 .white-menu .zubuz-login-btn {
@@ -372,9 +384,10 @@
   .site-menu-main .nav-link-item {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
-    padding-left: 19px !important;
-    padding-right: 19px !important;
+    padding-left: 0px !important;
+    padding-right: 15px !important;
   }
+  
 }
 
 .dark-mode-texts .nav-link-item {
